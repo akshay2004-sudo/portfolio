@@ -602,6 +602,30 @@
       position: absolute; left: 0;
       color: var(--accent); font-size: 0.7rem;
     }
+    .exp-link-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--glow) 100%);
+      color: white;
+      padding: 0.8rem 1.8rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 15px rgba(59,111,245,0.3);
+      margin-top: 1.5rem;
+    }
+    .exp-link-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(59,111,245,0.5);
+    }
+    .exp-link-btn:active {
+      transform: scale(0.98);
+    }
  
     /* ── PROJECTS ── */
     #projects { background: var(--ink); }
@@ -833,7 +857,73 @@
       border-bottom: 1px solid var(--edge);
     }
     .edu-certs-grid {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem;
+      display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4rem;
+    }
+    .java-card {
+      background: linear-gradient(135deg, rgba(59,111,245,0.1) 0%, rgba(91,143,255,0.05) 100%);
+      border: 2px solid var(--accent);
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .java-card::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -50%;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(59,111,245,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .java-card:hover {
+      border-color: var(--glow);
+      background: linear-gradient(135deg, rgba(59,111,245,0.15) 0%, rgba(91,143,255,0.1) 100%);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(59,111,245,0.2);
+    }
+    .java-card-content {
+      position: relative;
+      z-index: 1;
+    }
+    .java-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+    .java-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      margin-bottom: 0.8rem;
+    }
+    .java-desc {
+      font-size: 0.75rem;
+      color: var(--dim);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .java-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--glow) 100%);
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 4px 15px rgba(59,111,245,0.3);
+    }
+    .java-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(59,111,245,0.5);
+    }
+    .java-btn:active {
+      transform: scale(0.98);
     }
     .edu-card {
       background: var(--card);
@@ -1464,6 +1554,9 @@
       <li>Connected the full stack through Node.js, gaining end-to-end understanding from button click to database query and back.</li>
       <li>Worked in a real-world team environment with exposure to proper project architecture, collaborative Git workflows, and production-level debugging.</li>
     </ul>
+    <a href="https://github.com/akshay2004-sudo/LMS-Learning-managment-system-.git" target="_blank" class="exp-link-btn">
+      <i class="fa fa-github" style="margin-right:0.6rem;"></i> View LMS Repository
+    </a>
   </div>
 </section>
  
@@ -1520,7 +1613,7 @@
           <span class="proj-tag">Flask</span>
           <span class="proj-tag">Code Analysis</span>
         </div>
-        <a href="#" class="proj-link">View Project <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
+        <a href="https://github.com/akshay2004-sudo/code-reviewer-and-the-study-guide.git" target="_blank" class="proj-link"><i class="fa fa-github" style="margin-right:0.4rem;"></i>View Repository <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
       </div>
     </div>
  
@@ -1547,7 +1640,7 @@
           <span class="proj-tag">Chatbot</span>
           <span class="proj-tag">Dashboard</span>
         </div>
-        <a href="#" class="proj-link">View Project <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
+        <a href="https://github.com/akshay2004-sudo/automated-resume-screening-and-ranking-using-ai.git" target="_blank" class="proj-link"><i class="fa fa-github" style="margin-right:0.4rem;"></i>View Repository <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
       </div>
     </div>
 
@@ -1573,7 +1666,7 @@
           <span class="proj-tag">Dashboard</span>
           <span class="proj-tag">Data Analytics</span>
         </div>
-        <a href="#" class="proj-link">View Project <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
+        <a href="https://github.com/akshay2004-sudo/code-reviewer-and-the-study-guide.git" target="_blank" class="proj-link"><i class="fa fa-github" style="margin-right:0.4rem;"></i>View Repository <i class="fa fa-arrow-right" style="font-size:0.6rem;"></i></a>
       </div>
     </div>
  
@@ -1628,6 +1721,21 @@
             <div class="cert-hours">3h 30m</div>
           </div>
           <div class="cert-detail">Infosys Springboard · IaaS, PaaS, SaaS, AWS Overview</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--dim);margin-bottom:1.2rem;">Open Source & Projects</h3>
+      <div class="java-card reveal d2">
+        <div class="java-card-content">
+          <div class="java-icon"><i class="fa fa-code"></i></div>
+          <div class="java-title">Java Problem Solutions</div>
+          <div class="java-desc">
+            Comprehensive collection of data structures, algorithms, and problem-solving solutions in Java. Includes DSA problems, coding challenges, and interview preparation materials with optimized solutions and detailed explanations.
+          </div>
+          <a href="https://github.com/akshay2004-sudo/JAVA.git" target="_blank" class="java-btn">
+            <i class="fa fa-github" style="margin-right:0.5rem;"></i> View Repository
+          </a>
         </div>
       </div>
     </div>
